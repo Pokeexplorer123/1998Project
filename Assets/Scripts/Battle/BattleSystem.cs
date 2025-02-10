@@ -29,7 +29,8 @@ public class BattleSystem : MonoBehaviour
     public AudioClip SuperEffectiveClip;
     public AudioClip NotVeryEffectiveClip;
     private Camera battleCamera;
-    public Material trainerMaterial; 
+    public Material trainerMaterial;
+    public Image battlemask;
 
     public event Action<bool> OnBattleOver;
 
@@ -48,6 +49,7 @@ public class BattleSystem : MonoBehaviour
         trainerMaterial.SetFloat("_EnablePaletteSwap", 1);
         enemyImage.material = trainerMaterial; // Apply shader material
         trainerMaterial.SetFloat("_EnablePaletteSwap", 1);
+        battlemask.gameObject.SetActive(false);
 }
 
     void PlayBattleMusic()
@@ -80,8 +82,6 @@ public class BattleSystem : MonoBehaviour
         enemyUnit.PlayEnterAnimation(() => enemyAnimationDone = true);
 
         yield return new WaitUntil(() => enemyAnimationDone);
-
-        // Remove the shader AFTER the animation
         trainerMaterial.SetFloat("_EnablePaletteSwap", 0);
 
         CrySource.PlayOneShot(enemyUnit.Pokemon.Base.CryClip);
@@ -114,10 +114,19 @@ public class BattleSystem : MonoBehaviour
 
     void PlayTrainerEnterAnimation()
     {
-        redTrainer.transform.localPosition = new Vector3(117f, redTrainer.transform.localPosition.y); // Start off-screen left
+        // Set the initial position of the trainer and activate it
+        redTrainer.transform.localPosition = new Vector3(117f, redTrainer.transform.localPosition.y);
         redTrainer.gameObject.SetActive(true);
 
-        redTrainer.transform.DOLocalMoveX(-44f, 2f).SetEase(Ease.OutQuad); // Move to -117f
+        // Animate the trainer's movement
+        redTrainer.transform.DOLocalMoveX(-44f, 2f).SetEase(Ease.OutQuad)
+            .OnComplete(() =>
+            {
+                // Activate the battlemask on the last frame of the animation
+                battlemask.gameObject.SetActive(true);
+                // Deactivate the battlemask after 1 frame (~0.016s)
+                DOVirtual.DelayedCall(0.016f, () => battlemask.gameObject.SetActive(false));
+            });
     }
 
     void PlayTrainerLeaveAnimation()
@@ -188,7 +197,7 @@ public class BattleSystem : MonoBehaviour
         if (damageDetails.Fainted)
         {
             StartCoroutine(PlayVictoryMusic());
-            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} Fainted");
+            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} fainted !");
             enemyUnit.PlayFaintAnimation();
             downcursor.gameObject.SetActive(true);
             downcursor.StartBlinking();
