@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
   m_Name: Pikachu
   m_EditorClassIdentifier: 
-  name: 
+  name: PIKACHU
   description: 
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: e585ad3bd46a07e4397596584568e5f5, type: 3}
+  backSprite: {fileID: 21300000, guid: 99b8a0c732319a34cbb2e5fb9c07f392, type: 3}
   SendOutStages: []
   PaletteTexture: {fileID: -8328923581568760697, guid: c4414919e375e6945a9ca685e8d497fc, type: 3}
-  type1: 0
+  type1: 4
   type2: 0
   maxHp: 0
   attack: 0
   defense: 0
   speed: 0
   special: 0
-  cryClip: {fileID: 0}
+  cryClip: {fileID: 8300000, guid: 4763d1e93cc3fd143ac5036d875fc2a5, type: 3}
   learnableMoves: []

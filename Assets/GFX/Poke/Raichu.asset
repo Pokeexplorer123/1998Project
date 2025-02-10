@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   description: 
-  frontSprite: {fileID: 0}
-  backSprite: {fileID: 0}
+  frontSprite: {fileID: 21300000, guid: fc96ee6a7b4dbf44ba848a33991bc4e8, type: 3}
+  backSprite: {fileID: 21300000, guid: 0ddb231be5b95534abd875c154878879, type: 3}
+  SendOutStages: []
+  PaletteTexture: {fileID: -8328923581568760697, guid: c4414919e375e6945a9ca685e8d497fc, type: 3}
   type1: 0
   type2: 0
   maxHp: 0
@@ -23,4 +25,5 @@ MonoBehaviour:
   defense: 0
   speed: 0
   special: 0
+  cryClip: {fileID: 8300000, guid: 4151dc1818671d842835ed523564a5ba, type: 3}
   learnableMoves: []
