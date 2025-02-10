@@ -487,8 +487,10 @@ public class BattleUnit : MonoBehaviour
     public void PlayFaintAnimation()
     {
         var sequence = DOTween.Sequence();
-        sequence.Append(spriteImage.transform.DOLocalMoveY(originalPos.y - 64f, 0.5f));
+        sequence.Append(spriteImage.transform.DOLocalMoveY(originalPos.y - 64f, 2f))
+                .OnComplete(() => spriteImage.gameObject.SetActive(false));
     }
+
 
     public void PlayBlinkEffect()
     {

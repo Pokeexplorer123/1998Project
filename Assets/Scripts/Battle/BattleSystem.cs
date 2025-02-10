@@ -30,7 +30,10 @@ public class BattleSystem : MonoBehaviour
     public AudioClip NotVeryEffectiveClip;
     private Camera battleCamera;
     public Material trainerMaterial;
+    private Material enemyMaterial;
+    private Material playerMaterial;
     public Image battlemask;
+    public Image battlemask2;
 
     public event Action<bool> OnBattleOver;
 
@@ -40,17 +43,19 @@ public class BattleSystem : MonoBehaviour
 
     private void Start()
     {
-        battleCamera = GameObject.Find("BattleCamera").GetComponent<Camera>();
         StartCoroutine(SetupBattle());
         PlayBattleMusic();
         Image playerImage = redTrainer.GetComponent<Image>();
         Image enemyImage = enemyUnit.GetComponent<Image>();
-        playerImage.material = trainerMaterial; // Apply shader material
-        trainerMaterial.SetFloat("_EnablePaletteSwap", 1);
-        enemyImage.material = trainerMaterial; // Apply shader material
-        trainerMaterial.SetFloat("_EnablePaletteSwap", 1);
+        playerMaterial = new Material(trainerMaterial); // Clone the material
+        enemyMaterial = new Material(trainerMaterial);
+        playerImage.material = playerMaterial;
+        enemyImage.material = enemyMaterial;
+        playerMaterial.SetFloat("_SwapProgress", 1f);
+        enemyMaterial.SetFloat("_SwapProgress", 1f);
         battlemask.gameObject.SetActive(false);
-}
+        battlemask2.gameObject.SetActive(false);
+    }
 
     void PlayBattleMusic()
     {
@@ -82,13 +87,19 @@ public class BattleSystem : MonoBehaviour
         enemyUnit.PlayEnterAnimation(() => enemyAnimationDone = true);
 
         yield return new WaitUntil(() => enemyAnimationDone);
-        trainerMaterial.SetFloat("_EnablePaletteSwap", 0);
+        yield return new WaitForSeconds(0.032f);
+        playerMaterial.SetFloat("_SwapProgress", 0f);
+        enemyMaterial.SetFloat("_SwapProgress", 0.75f);
+        yield return new WaitForSeconds(0.016f);
+        enemyMaterial.SetFloat("_SwapProgress", 0f);
+
+        yield return new WaitForSeconds(1.168f);
 
         CrySource.PlayOneShot(enemyUnit.Pokemon.Base.CryClip);
         yield return dialogBox.TypeDialog($"A wild {enemyUnit.Pokemon.Base.Name} appeared.");
         downcursor.gameObject.SetActive(true);
         downcursor.StartBlinking();
-        trainerMaterial.SetFloat("_EnablePaletteSwap", 0);
+        trainerMaterial.SetFloat("_SwapProgress", 0f);
 
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.A));
         enemyHud.gameObject.SetActive(true);
@@ -122,10 +133,19 @@ public class BattleSystem : MonoBehaviour
         redTrainer.transform.DOLocalMoveX(-44f, 2f).SetEase(Ease.OutQuad)
             .OnComplete(() =>
             {
-                // Activate the battlemask on the last frame of the animation
+                // Activate the first battlemask
                 battlemask.gameObject.SetActive(true);
-                // Deactivate the battlemask after 1 frame (~0.016s)
-                DOVirtual.DelayedCall(0.016f, () => battlemask.gameObject.SetActive(false));
+                // Deactivate battlemask after 1 frame (~0.016s)
+                DOVirtual.DelayedCall(0.016f, () =>
+                {
+                    battlemask.gameObject.SetActive(false);
+
+                    // Activate battlemask2 AFTER battlemask disappears
+                    battlemask2.gameObject.SetActive(true);
+
+                    // Deactivate battlemask2 after another 1 frame (~0.016s)
+                    DOVirtual.DelayedCall(0.016f, () => battlemask2.gameObject.SetActive(false));
+                });
             });
     }
 
@@ -197,7 +217,7 @@ public class BattleSystem : MonoBehaviour
         if (damageDetails.Fainted)
         {
             StartCoroutine(PlayVictoryMusic());
-            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} fainted !");
+            yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} fainted!");
             enemyUnit.PlayFaintAnimation();
             downcursor.gameObject.SetActive(true);
             downcursor.StartBlinking();

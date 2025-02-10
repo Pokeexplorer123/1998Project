@@ -1,10 +1,10 @@
-Shader "Custom/PaletteSwapDisappear"
+Shader "Custom/PaletteSwapReveal_TopToBottom"
 {
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
         _PaletteTex ("Palette Texture", 2D) = "white" {}
-        _EnablePaletteSwap ("Enable Palette Swap", Float) = 0
+        _SwapProgress ("Swap Progress", Range(0, 1)) = 0
     }
 
     SubShader
@@ -36,7 +36,7 @@ Shader "Custom/PaletteSwapDisappear"
 
             sampler2D _MainTex;
             sampler2D _PaletteTex;
-            float _EnablePaletteSwap;
+            float _SwapProgress; // 0 = original, 1 = full palette swap
 
             v2f vert (appdata_t v)
             {
@@ -48,16 +48,16 @@ Shader "Custom/PaletteSwapDisappear"
 
             fixed4 frag (v2f i) : SV_Target
             {
-                fixed4 color = tex2D(_MainTex, i.uv);
+                fixed4 originalColor = tex2D(_MainTex, i.uv);
 
-                // Check if palette swap is enabled
-                if (_EnablePaletteSwap < 0.5)
+                // Swap from TOP to BOTTOM
+                if (i.uv.y < (1.0 - _SwapProgress))
                 {
-                    return color; // Normal sprite colors
+                    return originalColor; // Keep original color above the threshold
                 }
 
-                // Convert to grayscale for palette indexing
-                float grayscale = dot(color.rgb, float3(0.299, 0.587, 0.114));
+                // Convert original color to grayscale for palette lookup
+                float grayscale = dot(originalColor.rgb, float3(0.299, 0.587, 0.114));
 
                 // Map grayscale to 5 discrete colors
                 float index = floor(grayscale * 5.0) / 5.0;
@@ -65,7 +65,7 @@ Shader "Custom/PaletteSwapDisappear"
                 // Sample the palette using the index
                 fixed4 paletteColor = tex2D(_PaletteTex, float2(index, 0.5));
 
-                return fixed4(paletteColor.rgb, color.a);
+                return fixed4(paletteColor.rgb, originalColor.a);
             }
             ENDCG
         }
