@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Machoke
+  m_EditorClassIdentifier: 
+  name: MACHOKE
+  description: 
+  frontSprite: {fileID: 21300000, guid: 52a9f653943762e459c4da597b1af66c, type: 3}
+  backSprite: {fileID: 21300000, guid: 49f944f8fe0faa0479bd068955b19203, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: e503ca8d31432004694d92593db4f7dc, type: 3}
+  - {fileID: 21300000, guid: 1cce88b03de1fc843a1ebb513d3ecc1e, type: 3}
+  - {fileID: 21300000, guid: 03a3b152a37110745aea92de0dfa5c9e, type: 3}
+  - {fileID: 21300000, guid: 448b5031f33ded745a9bbc0d349250c0, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 80
+  attack: 100
+  defense: 70
+  speed: 45
+  special: 50
+  cryClip: {fileID: 8300000, guid: 435a871ac10b0f74cbfbea70b5e67a4c, type: 3}
+  learnableMoves: []

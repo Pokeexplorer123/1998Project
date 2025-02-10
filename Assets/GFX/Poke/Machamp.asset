@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Machamp
+  m_EditorClassIdentifier: 
+  name: MACHAMP
+  description: 
+  frontSprite: {fileID: 21300000, guid: 91a0461d003098243882c824f76a9fb6, type: 3}
+  backSprite: {fileID: 21300000, guid: 035da773cc297a24186d1f58c2cea66f, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 32730a5bea3da2942bd184e5df98c617, type: 3}
+  - {fileID: 21300000, guid: 89dc47fb6fa728e4b9e19bca00478fdf, type: 3}
+  - {fileID: 21300000, guid: 035da773cc297a24186d1f58c2cea66f, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 90
+  attack: 130
+  defense: 80
+  speed: 55
+  special: 65
+  cryClip: {fileID: 8300000, guid: f424960964682924594e78f83078aef9, type: 3}
+  learnableMoves: []

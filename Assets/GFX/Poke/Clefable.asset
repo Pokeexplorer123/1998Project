@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Clefable
+  m_EditorClassIdentifier: 
+  name: CLEFABLE
+  description: 
+  frontSprite: {fileID: 21300000, guid: d8dd89964c5e8aa4b8435aa50126098c, type: 3}
+  backSprite: {fileID: 21300000, guid: 74040a0d50a55d54e87068507f38973c, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 24257f3aedb57cd4d817003180ac94f0, type: 3}
+  - {fileID: 21300000, guid: 0e6a0c48e311ec740a95e7d2035bbb12, type: 3}
+  - {fileID: 21300000, guid: 16446e86b2828854c8d15327080fabd2, type: 3}
+  - {fileID: 21300000, guid: 15c59593d1bfe1c49a865f9c86cb6f65, type: 3}
+  type1: 1
+  type2: 0
+  maxHp: 95
+  attack: 70
+  defense: 73
+  speed: 60
+  special: 85
+  cryClip: {fileID: 8300000, guid: e415ecbc4c725c5428aed9261753ffa7, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: a38c8c47c5768344d99d304c034747c0, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: fdd2f0a47a1034b44aa505f70738173b, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: fe3974931e6818740bbd7f0cc74efa2e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a24717c1b390a824dba3c9276486f31b, type: 2}
+    level: 1

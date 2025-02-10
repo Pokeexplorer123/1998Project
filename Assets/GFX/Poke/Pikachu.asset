@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Pikachu
+  m_EditorClassIdentifier: 
+  name: 
+  description: 
+  frontSprite: {fileID: 0}
+  backSprite: {fileID: 0}
+  SendOutStages: []
+  PaletteTexture: {fileID: -8328923581568760697, guid: c4414919e375e6945a9ca685e8d497fc, type: 3}
+  type1: 0
+  type2: 0
+  maxHp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  special: 0
+  cryClip: {fileID: 0}
+  learnableMoves: []

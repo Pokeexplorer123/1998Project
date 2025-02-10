@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Arbok
+  m_EditorClassIdentifier: 
+  name: ARBOK
+  description: 
+  frontSprite: {fileID: 21300000, guid: 55d007c2597c7704d8c9ab190946212a, type: 3}
+  backSprite: {fileID: 21300000, guid: bb09d2f0ceabf6d4387f48a7c95634cb, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 3b8b10db3d818634db57e2d2cd9a1604, type: 3}
+  - {fileID: 21300000, guid: df6a40302f252fd499d70b5a930534a1, type: 3}
+  - {fileID: 21300000, guid: 33df791682a03eb48aa176ba562c735f, type: 3}
+  - {fileID: 21300000, guid: fda1962b2e463fb4884ab2123cce53e1, type: 3}
+  type1: 8
+  type2: 0
+  maxHp: 60
+  attack: 85
+  defense: 69
+  speed: 80
+  special: 65
+  cryClip: {fileID: 8300000, guid: 46f140064e11fa34abb25d6c54832345, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 8f69d28ec1cbc204fa9283116cba1033, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 471950f0fdddf9f4799fd689653ded2e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 16f81f6446a6cee438120e46eea0a69d, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 471950f0fdddf9f4799fd689653ded2e, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 7e738d0eda4d5fa47ab6bb6305cd5a62, type: 2}
+    level: 17
+  - moveBase: {fileID: 11400000, guid: 456505bb84c3efe43af91a029d6b39d6, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 9bf4644a8d580b245a6b1de146360f8e, type: 2}
+    level: 36
+  - moveBase: {fileID: 11400000, guid: c2f0e3bdf266843409d7b9a556e6ca51, type: 2}
+    level: 47

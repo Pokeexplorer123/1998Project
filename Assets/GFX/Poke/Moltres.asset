@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Moltres
+  m_EditorClassIdentifier: 
+  name: MOLTRES
+  description: 
+  frontSprite: {fileID: 21300000, guid: fffa90ef47d270a478bc97f96b52052b, type: 3}
+  backSprite: {fileID: 21300000, guid: cdcba2e90d83d1a47a240f217149d0b6, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: c2b13fb9e12d33a429035fef7376357f, type: 3}
+  - {fileID: 21300000, guid: 6bb241f7c712543409bce6650f57ef66, type: 3}
+  - {fileID: 21300000, guid: 08e7e0a098acec84b8b313e3ebcf2c6f, type: 3}
+  - {fileID: 21300000, guid: 9acf1e92eb428a641a292f40f030dc12, type: 3}
+  type1: 2
+  type2: 0
+  maxHp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  special: 0
+  cryClip: {fileID: 8300000, guid: 42017ed5f41ff0a4384a9534a85994f6, type: 3}
+  learnableMoves: []

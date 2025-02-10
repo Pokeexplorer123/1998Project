@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Flareon
+  m_EditorClassIdentifier: 
+  name: FLAREON
+  description: 
+  frontSprite: {fileID: 21300000, guid: 231bdf2bf89b51c48910caf5442c7fea, type: 3}
+  backSprite: {fileID: 21300000, guid: 7cd24ab88cf8bb84c8a22beba22fe7cd, type: 3}
+  type1: 2
+  type2: 0
+  maxHp: 65
+  attack: 130
+  defense: 60
+  speed: 65
+  special: 110
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 5b34399464940a94596c6c9f16ebff20, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 28a231d131f941b489bc3f74bc6add9b, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c13a67421bcd15046b8e5747c16370b2, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9664c7446b41cbb4f92c69508a742e0c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 28a231d131f941b489bc3f74bc6add9b, type: 2}
+    level: 27
+  - moveBase: {fileID: 11400000, guid: 5b34399464940a94596c6c9f16ebff20, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 50e3c6364a3d97444b12f2af631e53a6, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 7e738d0eda4d5fa47ab6bb6305cd5a62, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 8f69d28ec1cbc204fa9283116cba1033, type: 2}
+    level: 42
+  - moveBase: {fileID: 11400000, guid: bca73266750b53b44bd261fc6ce808aa, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: 3bf102b9f842c884e9183a5e66b97c6c, type: 2}
+    level: 48
+  - moveBase: {fileID: 11400000, guid: 9086941d6e63f6e49bb1821eb155a1a1, type: 2}
+    level: 54

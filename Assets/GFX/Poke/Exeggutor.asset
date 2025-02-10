@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Exeggutor
+  m_EditorClassIdentifier: 
+  name: EXEGGUTOR
+  description: 
+  frontSprite: {fileID: 21300000, guid: 37fc503b00a44ac48b5a78ed597905ab, type: 3}
+  backSprite: {fileID: 21300000, guid: 20147d83ded4e6b499bf12fb54edd50d, type: 3}
+  SendOutStages: []
+  PaletteTexture: {fileID: -8328923581568760697, guid: 5395e57da861cea4f976d02af1de5de2, type: 3}
+  type1: 5
+  type2: 11
+  maxHp: 95
+  attack: 95
+  defense: 85
+  speed: 55
+  special: 125
+  cryClip: {fileID: 8300000, guid: ee7ac033d26d28842b499138b1a41244, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 271e2c8a2c0551a45b5d9b03a6feda0e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: fcde54b924ce40f458f7a93abc83ef33, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ef2487257ffe305479d6e54531289c21, type: 2}
+    level: 28

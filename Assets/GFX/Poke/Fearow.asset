@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Fearow
+  m_EditorClassIdentifier: 
+  name: FEAROW
+  description: 
+  frontSprite: {fileID: 21300000, guid: a205ccf18e032434c9a5881f7fb77cae, type: 3}
+  backSprite: {fileID: 21300000, guid: 1188d2e42a9f6544fbb6f90afea39e2c, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 13bc26fc4f7e1e944bf3e94996d26fc3, type: 3}
+  - {fileID: 21300000, guid: ff6744b64aeaf0741a374d8402c2a8f7, type: 3}
+  - {fileID: 21300000, guid: 2ffe1dff4d0cb524588728adb777a897, type: 3}
+  - {fileID: 21300000, guid: c5503fc45730d574eb69ee4eed6f3d7f, type: 3}
+  type1: 1
+  type2: 10
+  maxHp: 65
+  attack: 90
+  defense: 65
+  speed: 100
+  special: 61
+  cryClip: {fileID: 0}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: c524cfbe0bd0b25418b5f06cb52447e9, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8f69d28ec1cbc204fa9283116cba1033, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1415fbbba1fdd5544a50adb588fde3d1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8f69d28ec1cbc204fa9283116cba1033, type: 2}
+    level: 9
+  - moveBase: {fileID: 11400000, guid: 0fb66f5b0ab92c84e9629f8adaf4f509, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 63b2dea9c79af6541b80724b86e7b89d, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: e68ec845aeb9c2847bf936a3fa344839, type: 2}
+    level: 34
+  - moveBase: {fileID: 11400000, guid: 5f34db2db5185434486c32e7a72f36e7, type: 2}
+    level: 43

@@ -1,0 +1,4 @@
+repository "PokemonRed2d@Pokeexplorer@cloud"
+  path "/"
+    br "/main"
+    co "/main"

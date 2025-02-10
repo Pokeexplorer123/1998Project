@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Articuno
+  m_EditorClassIdentifier: 
+  name: ARTICUNO
+  description: 
+  frontSprite: {fileID: 21300000, guid: 4bb4099fcb99cae43a14a58b02884a1f, type: 3}
+  backSprite: {fileID: 21300000, guid: ea459c15bfe91104282881ab9ef14336, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: e8116973ff4cc6b4d909eda7b06dcf14, type: 3}
+  - {fileID: 21300000, guid: e48d95995dd11cf4aae41d7da0c7549e, type: 3}
+  - {fileID: 21300000, guid: ea459c15bfe91104282881ab9ef14336, type: 3}
+  PaletteTexture: {fileID: -8328923581568760697, guid: 7b57309b8a8eb894f9e37ffd55905474, type: 3}
+  type1: 6
+  type2: 10
+  maxHp: 90
+  attack: 85
+  defense: 100
+  speed: 85
+  special: 125
+  cryClip: {fileID: 8300000, guid: 2d6bdb6762fc0694e8683b0fd36d5b57, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3fb6f9483d9f0274d9c25eb6d0eacfa6, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 1415fbbba1fdd5544a50adb588fde3d1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 2000ce68402ad414fa7475e3bb1414a2, type: 2}
+    level: 51
+  - moveBase: {fileID: 11400000, guid: 5f34db2db5185434486c32e7a72f36e7, type: 2}
+    level: 55
+  - moveBase: {fileID: 11400000, guid: 19ef90c5ff400d143a7aeabae91cd738, type: 2}
+    level: 60

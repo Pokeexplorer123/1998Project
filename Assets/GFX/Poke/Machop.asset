@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Machop
+  m_EditorClassIdentifier: 
+  name: MACHOP
+  description: 
+  frontSprite: {fileID: 21300000, guid: 187053bcdc29e7343b12eea4270e706f, type: 3}
+  backSprite: {fileID: 21300000, guid: 17771ab6d3834bb40a4cda63d555fdc8, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: fbb0ac509ed52f84ca348312dd144661, type: 3}
+  - {fileID: 21300000, guid: 573ca161b569c2a4299181c23d9603e6, type: 3}
+  - {fileID: 21300000, guid: 17771ab6d3834bb40a4cda63d555fdc8, type: 3}
+  type1: 7
+  type2: 0
+  maxHp: 70
+  attack: 80
+  defense: 50
+  speed: 35
+  special: 35
+  cryClip: {fileID: 8300000, guid: 3ed488c4687750b4d888b611c598c84d, type: 3}
+  learnableMoves: []

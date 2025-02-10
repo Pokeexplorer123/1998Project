@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Bellsprout
+  m_EditorClassIdentifier: 
+  name: BELLSPROUT
+  description: 
+  frontSprite: {fileID: 21300000, guid: 088edebd5c0da0d4ca353e2b62ad60c5, type: 3}
+  backSprite: {fileID: 21300000, guid: 9c23572302e00f94384f0e56aed2ca7e, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: ee0ef0dd9bf558a46b269b4993afa3f9, type: 3}
+  - {fileID: 21300000, guid: 499b01745aef6ad44979e7c6c398009d, type: 3}
+  - {fileID: 21300000, guid: 4e896d73144dbbf4b9308b182d4e6936, type: 3}
+  - {fileID: 21300000, guid: e27c860171356ba41b78f3fc136d6c58, type: 3}
+  type1: 5
+  type2: 8
+  maxHp: 50
+  attack: 75
+  defense: 35
+  speed: 40
+  special: 70
+  cryClip: {fileID: 8300000, guid: 0788c6ca82615c04aa297f0f21c70518, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3f7e1b1cb235fb445bfc0257b5de33e6, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: f5677786f50701540a971ceb3fea9480, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 16f81f6446a6cee438120e46eea0a69d, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: cd332fc8241cb4643bd72d73d42765b8, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 04edd454254b82a40a3b1582bc5168b7, type: 2}
+    level: 18
+  - moveBase: {fileID: 11400000, guid: f0e4f3b65b1b1f649964e9bbc7f3f817, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: c2f0e3bdf266843409d7b9a556e6ca51, type: 2}
+    level: 26
+  - moveBase: {fileID: 11400000, guid: 43f4896e6404f3e4e8bc9c607e6e5adf, type: 2}
+    level: 33
+  - moveBase: {fileID: 11400000, guid: 55b9511868183e14a886b73c87f392ab, type: 2}
+    level: 42

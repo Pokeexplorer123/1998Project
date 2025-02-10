@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Abra
+  m_EditorClassIdentifier: 
+  name: ABRA
+  description: 
+  frontSprite: {fileID: 21300000, guid: 1845c0c87add9a644b6959a5b4c9f73b, type: 3}
+  backSprite: {fileID: 21300000, guid: e9971c15b5c325d4c80c19667a737c1a, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 5ee142ac3f98ebd4db8a5d1c4e245776, type: 3}
+  - {fileID: 21300000, guid: 150cb16bd7d9fbb428bd8ed7a83d5594, type: 3}
+  - {fileID: 21300000, guid: e9971c15b5c325d4c80c19667a737c1a, type: 3}
+  PaletteTexture: {fileID: -8328923581568760697, guid: c4414919e375e6945a9ca685e8d497fc, type: 3}
+  type1: 11
+  type2: 0
+  maxHp: 25
+  attack: 20
+  defense: 15
+  speed: 90
+  special: 105
+  cryClip: {fileID: 8300000, guid: baf26d8fb82c38c458f964f1df298e39, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3cbdb554d70a08b4b9cb616a93e9c302, type: 2}
+    level: 1

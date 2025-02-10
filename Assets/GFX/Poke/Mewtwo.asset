@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Mewtwo
+  m_EditorClassIdentifier: 
+  name: MEWTWO
+  description: 
+  frontSprite: {fileID: 21300000, guid: e34b0cf766982674fb60d57dfd4acb29, type: 3}
+  backSprite: {fileID: 21300000, guid: c295c61c2e625924d9bf6ccf9848a1d2, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 89b9d1b382678a14c83345b799f1f916, type: 3}
+  - {fileID: 21300000, guid: 768385956f6289f43b8a41830a0a232c, type: 3}
+  - {fileID: 21300000, guid: b9d01c5b4430a874693cdfd9376c0f3c, type: 3}
+  - {fileID: 21300000, guid: bf0a771cab5278145bb776e463ebd7ce, type: 3}
+  type1: 11
+  type2: 0
+  maxHp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  special: 0
+  cryClip: {fileID: 8300000, guid: b4377dc992f2d6646828f71bdc622129, type: 3}
+  learnableMoves: []

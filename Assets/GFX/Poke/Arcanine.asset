@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Arcanine
+  m_EditorClassIdentifier: 
+  name: ARCANINE
+  description: 
+  frontSprite: {fileID: 21300000, guid: c7560c21a3f2ce0498674f4572222db5, type: 3}
+  backSprite: {fileID: 21300000, guid: f8d1fde6df9146340a02b68f85f9793c, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 929806f7d370e8e40a5bffd27e804411, type: 3}
+  - {fileID: 21300000, guid: 8f36a79406cbe924bb61bbc441543b3f, type: 3}
+  - {fileID: 21300000, guid: 0d91992369a6778409e59691a74bd04c, type: 3}
+  PaletteTexture: {fileID: -8328923581568760697, guid: d4a681f9b9473ba4793c6b773451cc92, type: 3}
+  type1: 2
+  type2: 0
+  maxHp: 90
+  attack: 110
+  defense: 80
+  speed: 95
+  special: 80
+  cryClip: {fileID: 8300000, guid: 639f066319732464c93e0688d0f72950, type: 3}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 5b34399464940a94596c6c9f16ebff20, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8f69d28ec1cbc204fa9283116cba1033, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 8fa809c780e02eb468272e1f5d4511df, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 053ed317da0ec864ab37011d118bebfe, type: 2}
+    level: 1

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Shellder
+  m_EditorClassIdentifier: 
+  name: SHELLDER
+  description: 
+  frontSprite: {fileID: 21300000, guid: 646cdc254ebe5404a9c4ac204729e982, type: 3}
+  backSprite: {fileID: 21300000, guid: 12a016877245fe04b91bf92aa1f6b1a0, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 91903c5f7737648418d80409c5c49b85, type: 3}
+  - {fileID: 21300000, guid: 36069fcb5fd46de4fae59f87d9678ccb, type: 3}
+  - {fileID: 21300000, guid: 12a016877245fe04b91bf92aa1f6b1a0, type: 3}
+  type1: 3
+  type2: 0
+  maxHp: 30
+  attack: 65
+  defense: 100
+  speed: 40
+  special: 45
+  cryClip: {fileID: 8300000, guid: 50f83790173a634409e5e31a7888f058, type: 3}
+  learnableMoves: []

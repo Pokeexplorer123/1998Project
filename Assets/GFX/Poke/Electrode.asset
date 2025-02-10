@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Electrode
+  m_EditorClassIdentifier: 
+  name: ELECTRODE
+  description: 
+  frontSprite: {fileID: 21300000, guid: 9f3c8e79f9d81534cb7859caa9be6bf8, type: 3}
+  backSprite: {fileID: 21300000, guid: ba727987bace7364688e03a4f9daf866, type: 3}
+  type1: 4
+  type2: 0
+  maxHp: 60
+  attack: 50
+  defense: 70
+  speed: 140
+  special: 80
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 9bf4644a8d580b245a6b1de146360f8e, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a33b8b2fd566f4543a2f2218757b5b1b, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 9664c7446b41cbb4f92c69508a742e0c, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: a33b8b2fd566f4543a2f2218757b5b1b, type: 2}
+    level: 17
+  - moveBase: {fileID: 11400000, guid: 38e1710ab2f0c1c4fae6ac98c8d71e35, type: 2}
+    level: 22
+  - moveBase: {fileID: 11400000, guid: e745bd30582c0df47ae17fd2797154f1, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: a96603118ec95c645a310b6804974939, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: ec496506e4234254290eecd886c18434, type: 2}
+    level: 50

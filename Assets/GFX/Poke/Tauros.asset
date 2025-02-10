@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4434ec061c9c2a24db2006e40f16083d, type: 3}
+  m_Name: Tauros
+  m_EditorClassIdentifier: 
+  name: TAUROS
+  description: 
+  frontSprite: {fileID: 21300000, guid: cdceda2795ee75046bcae57fff7c2f3a, type: 3}
+  backSprite: {fileID: 21300000, guid: 4f0949505cc04894997e99e07af6d0eb, type: 3}
+  SendOutStages:
+  - {fileID: 21300000, guid: 60812322a8752a04c805c63dea2b9480, type: 3}
+  - {fileID: 21300000, guid: 5831990dddbb00e4fadad96d97fecd79, type: 3}
+  - {fileID: 21300000, guid: 8b150aa58d2945547a0ae1d8bfab019f, type: 3}
+  type1: 1
+  type2: 0
+  maxHp: 75
+  attack: 100
+  defense: 95
+  speed: 110
+  special: 70
+  cryClip: {fileID: 8300000, guid: 0a13dc0d59c876349ae461f75794b897, type: 3}
+  learnableMoves: []
