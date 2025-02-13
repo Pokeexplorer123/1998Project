@@ -23,7 +23,7 @@ ScriptedImporter:
     normalMapFilter: 0
     flipGreenChannel: 0
     swizzle: 50462976
-    isReadable: 0
+    isReadable: 1
     streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
@@ -71,9 +71,9 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -84,9 +84,9 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638747838918354847
+  platformSettingsDirtyTick: 638748717277633761
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: battlestartpal
+  - name: Background
     originalName: 
     pivot: {x: 0.375, y: 0}
     alignment: 9
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 4
       height: 1
-    spriteID: 8be5b375dc5df2a45b2e2ef8d773d1a8
+    spriteID: 9edb56f631ef34f42939b4d2e9b17246
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,13 +146,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1373212167
-    name: battlestartpal
-    layerFlags: 0
+    guid: -1021688250
+    name: Background
+    layerFlags: 15
     layerType: 0
     blendMode: 0
     cells:
-    - name: battlestartpal
+    - name: Background
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -160,7 +160,7 @@ ScriptedImporter:
         y: 0
         width: 5
         height: 1
-      spriteId: 8be5b375dc5df2a45b2e2ef8d773d1a8
+      spriteId: 9edb56f631ef34f42939b4d2e9b17246
     linkedCells: []
     parentIndex: -1
   platformSettings:

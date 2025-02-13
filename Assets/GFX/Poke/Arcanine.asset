@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8f36a79406cbe924bb61bbc441543b3f, type: 3}
   - {fileID: 21300000, guid: 0d91992369a6778409e59691a74bd04c, type: 3}
   PaletteTexture: {fileID: -8328923581568760697, guid: d4a681f9b9473ba4793c6b773451cc92, type: 3}
+  swapTexture: {fileID: 2800000, guid: f8752c1363ed94c4d961d8faf3e98f8d, type: 3}
   type1: 2
   type2: 0
   maxHp: 90

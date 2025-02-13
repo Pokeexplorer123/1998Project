@@ -1,9 +1,9 @@
-﻿Shader "Custom/TextureSwapDisappear"
+Shader "Custom/TrainerShader"
 {
     Properties
     {
         _MainTex ("Sprite Texture", 2D) = "white" {}
-        _SwapTex ("Swap Texture", 2D) = "white" {}
+        _PaletteTex ("Palette Texture", 2D) = "white" {}
         _SwapProgress ("Swap Progress", Range(0, 1)) = 0
     }
 
@@ -35,8 +35,8 @@
             };
 
             sampler2D _MainTex;
-            sampler2D _SwapTex;
-            float _SwapProgress;
+            sampler2D _PaletteTex;
+            float _SwapProgress; // 0 = original, 1 = full palette swap
 
             v2f vert (appdata_t v)
             {
@@ -49,16 +49,23 @@
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 originalColor = tex2D(_MainTex, i.uv);
-                fixed4 swapColor = tex2D(_SwapTex, i.uv);
 
-                // If above the swap progress threshold, keep the original color
+                // Swap from TOP to BOTTOM
                 if (i.uv.y < (1.0 - _SwapProgress))
                 {
-                    return originalColor;
+                    return originalColor; // Keep original color above the threshold
                 }
 
-                // Otherwise, transition to the swap texture
-                return swapColor;
+                // Convert original color to grayscale for palette lookup
+                float grayscale = dot(originalColor.rgb, float3(0.299, 0.587, 0.114));
+
+                // Map grayscale to 5 discrete colors
+                float index = floor(grayscale * 5.0) / 5.0;
+
+                // Sample the palette using the index
+                fixed4 paletteColor = tex2D(_PaletteTex, float2(index, 0.5));
+
+                return fixed4(paletteColor.rgb, originalColor.a);
             }
             ENDCG
         }

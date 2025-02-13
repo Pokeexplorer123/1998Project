@@ -16,6 +16,7 @@ public class PokemonBase : ScriptableObject
     public Sprite[] SendOutStages;
 
     public Texture2D PaletteTexture;
+    public Texture2D swapTexture;
 
     [SerializeField] PokemonType type1;
     [SerializeField] PokemonType type2;
@@ -49,6 +50,11 @@ public class PokemonBase : ScriptableObject
     public Sprite BackSprite
     {
         get { return backSprite; }
+    }
+
+    public Texture2D SwapTexture
+    {
+        get { return swapTexture; }
     }
 
     public PokemonType Type1

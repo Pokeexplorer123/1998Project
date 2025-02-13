@@ -30,6 +30,7 @@ public class BattleSystem : MonoBehaviour
     public AudioClip NotVeryEffectiveClip;
     private Camera battleCamera;
     public Material trainerMaterial;
+    public Material traineredMaterial;
     private Material enemyMaterial;
     private Material playerMaterial;
     public Image battlemask;
@@ -45,14 +46,39 @@ public class BattleSystem : MonoBehaviour
     {
         StartCoroutine(SetupBattle());
         PlayBattleMusic();
+
+        // Get the Image components
         Image playerImage = redTrainer.GetComponent<Image>();
         Image enemyImage = enemyUnit.GetComponent<Image>();
-        playerMaterial = new Material(trainerMaterial); // Clone the material
+
+        // Clone the materials to prevent affecting others
+        playerMaterial = new Material(traineredMaterial);
         enemyMaterial = new Material(trainerMaterial);
+
+        // Apply the material to the images
         playerImage.material = playerMaterial;
         enemyImage.material = enemyMaterial;
+
+        // Set swap progress to 1 (fully swapped)
         playerMaterial.SetFloat("_SwapProgress", 1f);
         enemyMaterial.SetFloat("_SwapProgress", 1f);
+
+        // Get the Pokemon instances from your battle system
+        Pokemon playerPokemon = playerUnit.Pokemon;
+        Pokemon enemyPokemon = enemyUnit.Pokemon;
+
+        // Set the swap texture from PokemonBase
+        if (playerPokemon != null && playerPokemon.Base.swapTexture != null)
+        {
+            playerMaterial.SetTexture("_SwapTex", playerPokemon.Base.swapTexture);
+        }
+
+        if (enemyPokemon != null && enemyPokemon.Base.swapTexture != null)
+        {
+            enemyMaterial.SetTexture("_SwapTex", enemyPokemon.Base.swapTexture);
+        }
+
+        // Hide the battle masks
         battlemask.gameObject.SetActive(false);
         battlemask2.gameObject.SetActive(false);
     }

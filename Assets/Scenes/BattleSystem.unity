@@ -1725,6 +1725,7 @@ MonoBehaviour:
   SuperEffectiveClip: {fileID: 8300000, guid: 590ba6f09dffde04980090eadb9e5e07, type: 3}
   NotVeryEffectiveClip: {fileID: 8300000, guid: 767180fa05c5ce448a1dd84e0e8f2511, type: 3}
   trainerMaterial: {fileID: 2100000, guid: c1212c6f879e22b43bc808791afaac2a, type: 2}
+  traineredMaterial: {fileID: 2100000, guid: c0e6f598bae8ed744bed106a57cce7f0, type: 2}
   battlemask: {fileID: 1337220159}
   battlemask2: {fileID: 1998437702}
 --- !u!95 &615051815
@@ -2800,7 +2801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 47e43b059f17d734890923fe281dd260, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a344485302bbf144a8d58e061df7aee8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2830,7 +2831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045cd0318a8c14748929df50f68a80c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _base: {fileID: 11400000, guid: 8af273ce374654f4682546d6949093d3, type: 2}
+  _base: {fileID: 11400000, guid: 9fbab669fbdfd3e4a95e85799d80aca5, type: 2}
   level: 50
   isPlayerUnit: 0
   spriteImage: {fileID: 1137817489}
@@ -3313,7 +3314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: c1212c6f879e22b43bc808791afaac2a, type: 2}
+  m_Material: {fileID: 2100000, guid: c0e6f598bae8ed744bed106a57cce7f0, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4006,7 +4007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: c1212c6f879e22b43bc808791afaac2a, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
