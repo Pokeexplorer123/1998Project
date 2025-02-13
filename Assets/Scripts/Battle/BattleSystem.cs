@@ -115,7 +115,7 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitUntil(() => enemyAnimationDone);
         yield return new WaitForSeconds(0.032f);
         playerMaterial.SetFloat("_SwapProgress", 0f);
-        enemyMaterial.SetFloat("_SwapProgress", 0.75f);
+        enemyMaterial.SetFloat("_SwapProgress", 0.732f);
         yield return new WaitForSeconds(0.016f);
         enemyMaterial.SetFloat("_SwapProgress", 0f);
 
