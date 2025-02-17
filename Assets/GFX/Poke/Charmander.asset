@@ -16,11 +16,9 @@ MonoBehaviour:
   description: 
   frontSprite: {fileID: 21300000, guid: b7f80c1468763904f9a350411ab137e0, type: 3}
   backSprite: {fileID: 21300000, guid: 721b4fc609630eb46b5498ebc06282d7, type: 3}
-  SendOutStages:
-  - {fileID: 21300000, guid: 74408d0c822c21a49ad830e1afc4dd58, type: 3}
-  - {fileID: 21300000, guid: 56579b9bfdf4f76479cf87345f0d243e, type: 3}
-  - {fileID: 21300000, guid: 721b4fc609630eb46b5498ebc06282d7, type: 3}
+  SendOutStages: []
   PaletteTexture: {fileID: -8328923581568760697, guid: d4a681f9b9473ba4793c6b773451cc92, type: 3}
+  swapTexture: {fileID: 2800000, guid: 28d84816dc8d0484ab6da84bd3f5f71f, type: 3}
   type1: 2
   type2: 0
   maxHp: 39

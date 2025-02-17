@@ -2793,7 +2793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: c1212c6f879e22b43bc808791afaac2a, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2831,7 +2831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045cd0318a8c14748929df50f68a80c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _base: {fileID: 11400000, guid: bc67790e77fe2ff4a81a463338c0c71b, type: 2}
+  _base: {fileID: 11400000, guid: f6e5410742f313243907c25f06de7f86, type: 2}
   level: 50
   isPlayerUnit: 0
   spriteImage: {fileID: 1137817489}
