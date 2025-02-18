@@ -35,6 +35,8 @@ public class BattleSystem : MonoBehaviour
     private Material playerMaterial;
     public Image battlemask;
     public Image battlemask2;
+    public Image mask;
+    public Image mask2;
 
     public event Action<bool> OnBattleOver;
 
@@ -81,6 +83,8 @@ public class BattleSystem : MonoBehaviour
         // Hide the battle masks
         battlemask.gameObject.SetActive(false);
         battlemask2.gameObject.SetActive(false);
+        mask.gameObject.SetActive(false);
+        mask2.gameObject.SetActive(false);
     }
 
     void PlayBattleMusic()
@@ -161,16 +165,22 @@ public class BattleSystem : MonoBehaviour
             {
                 // Activate the first battlemask
                 battlemask.gameObject.SetActive(true);
+                mask.gameObject.SetActive(true);
                 // Deactivate battlemask after 1 frame (~0.016s)
                 DOVirtual.DelayedCall(0.016f, () =>
                 {
                     battlemask.gameObject.SetActive(false);
+                    mask.gameObject.SetActive(false);
 
                     // Activate battlemask2 AFTER battlemask disappears
                     battlemask2.gameObject.SetActive(true);
+                    mask2.gameObject.SetActive(true);
 
                     // Deactivate battlemask2 after another 1 frame (~0.016s)
-                    DOVirtual.DelayedCall(0.016f, () => battlemask2.gameObject.SetActive(false));
+                    DOVirtual.DelayedCall(0.016f, () => {
+                        battlemask2.gameObject.SetActive(false);
+                        mask2.gameObject.SetActive(false);
+                    });
                 });
             });
     }
