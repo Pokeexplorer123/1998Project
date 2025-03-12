@@ -80,7 +80,7 @@ public class BattleUnit : MonoBehaviour
             yield return new WaitForSeconds(frameDuration);
         }
         sendOutEffectImage.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.1f); 
+        yield return new WaitForSeconds(0.1f);
         transform.localScale = Vector3.one;
         spriteImage.gameObject.SetActive(true);
 
@@ -121,6 +121,15 @@ public class BattleUnit : MonoBehaviour
 
         spriteImage.sprite = originalSprite;
         spriteImage.gameObject.SetActive(true);
+    }
+
+    private IEnumerator PlaySendOutStages()
+    {
+        for (int i = 0; i < Pokemon.Base.SendOutStages.Length; i++)
+        {
+            spriteImage.sprite = Pokemon.Base.SendOutStages[i];
+            yield return null;
+        }
     }
 
     private void ApplyPaletteShader(Image image)
